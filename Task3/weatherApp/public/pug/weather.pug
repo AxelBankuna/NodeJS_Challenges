@@ -1,0 +1,25 @@
+doctype html
+html
+    head
+        title Weather App.
+        link(rel="stylesheet", href="/css/semantic.min.css")
+        link(rel="stylesheet", href="/css/index.css")
+        link(href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet")
+
+    body
+        div.ui.grid
+            div.twelve.wide.centered.column
+                div#logo WeatherApp
+
+                div#searchbar
+                    div.ui.action.input
+                        input#searchcity(placeholder="Enter a location...", type = "text" name="city")
+                        button(onClick="search()").ui.secondary.button Search
+
+                div.results
+                    div#temperature
+                    div#city
+                    div#description
+                        span#condition Get your weather for free.
+
+        script(type="text/javascript", src="/js/weather.js")
