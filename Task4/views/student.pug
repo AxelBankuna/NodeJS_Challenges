@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1= student.name + student.surname
+    h5 Date of visit: #{student._id.getTimestamp()}
+    h5 Subject of inquiry: #{student.subject}
+    h5 Staff who assisted visitor: #{student.staff}
+    hr
+    a.btn.btn-default(href='/student/edit/'+student._id) Edit
+    a.btn.btn-danger.delete-student(href='#', data-id=student._id) Delete

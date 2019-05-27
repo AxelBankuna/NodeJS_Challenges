@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    h1 #{title}
+    form(method='POST', action='/students/edit/'+student._id)
+        #form-group
+            label Name:
+            input.form-control(name='name', type='text', value=student.name)
+        #form-group
+            label Surname:
+            input.form-control(name='surname', type='text', value=student.surname)
+        #form-group
+            label Age:
+            input.form-control(name='age', type='number', value=student.age)
+        #form-group
+            label Subject Of Inquiry:
+            input.form-control(name='subject', type='text', value=student.subject)
+        #form-group
+            label Staff who assisted visitor:
+            input.form-control(name='staff', type='text', value=student.staff)
+        br
+        input.btn.btn-primary(type='submit', value='Submit')

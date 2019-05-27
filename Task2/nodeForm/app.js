@@ -13,16 +13,12 @@ app.get('/', function (req, res) {
 });
 
 app.get("/form", function (req, res) {
-    res.sendfile("./form.html");
+    res.sendFile(__dirname+"/form.html");
 });
 
 app.post("/form", urlencodedParser, function (req, res) {
-    // console.log(req.body);      // your JSON
-    // res.send(req.body);    // echo the result back
-    // res.send("hello...");
     var email = req.body.email;
     var password = req.body.pwd;
-    // res.send("email: " + email + " password: " + password);
     res.send(req.body);
 });
 
