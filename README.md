@@ -1,4 +1,4 @@
-#Task 1 : Http server (http, get, serve static files)
+# Task 1 : Http server (http, get, serve static files)
 
 -A node server with express within nodeApp folder that serves a Javascript memory-game on port 8080 to https://localhost:8080
 
