@@ -43,5 +43,5 @@
 - 'npm start'
 
 ### Prerequisites
--node
--npm (node package manager)
+- node
+- npm (node package manager)
